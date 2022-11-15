@@ -1,0 +1,14 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-synced.gmail: yunan05404@gmail.com
+  name: root-sync-2
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    repo: https://github.com/nan-yu/deployment-2
+  sourceFormat: unstructured
+  sourceType: git
