@@ -12,3 +12,8 @@ spec:
     repo: https://github.com/nan-yu/deployment-2
   sourceFormat: unstructured
   sourceType: git
+  notificationConfig:
+    secretRef:
+      name: notification-secret
+    configmapRef:
+      name: notification-cm-root-sync
