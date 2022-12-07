@@ -1,8 +1,8 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
-  #annotations:
-   # notifications.argoproj.io/subscribe.on-sync-synced.gmail: yunan05404@gmail.com
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-synced.gmail: yunan05404@gmail.com
   name: root-sync-2
   namespace: config-management-system
 spec:
