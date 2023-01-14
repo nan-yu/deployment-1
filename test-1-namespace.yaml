@@ -4,3 +4,4 @@ metadata:
   name: test-1
   labels:
     test: "true"
+    env: dev
