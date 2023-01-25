@@ -1,11 +1,12 @@
 apiVersion: configsync.gke.io/v1alpha1
-kind: RepoSync
+kind: RootSync
 metadata:
-  name: repo-sync
-  namespace: test-1
+  name: root-sync-2
+  namespace: config-management-system
   annotations:
     notifications.argoproj.io/subscribe.on-sync-synced.github: ""
 spec:
+  sourceFormat: unstructured
   git:
     repo: https://github.com/nan-yu/deployment-2
     branch: main
